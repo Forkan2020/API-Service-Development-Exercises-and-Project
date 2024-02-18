@@ -1,0 +1,20 @@
+forkan
+
+
+//add new reader
+curl -X POST "http://localhost:3000/readers?firstName=Forkan&lastName=Hossain&email=forkan@gmail.com"
+
+//add new book
+curl -X POST "http://localhost:3000/books?title=The+Great+Pickle&author=Fakhrul+Islam&publicationYear=2020"
+
+//asign a book to a user
+curl -X POST "http://localhost:3000/assignBook?readerId=1&bookId=1"
+
+//see a borrowed book details of an reader
+http://localhost:3000/user/1/book/1
+
+//see a reader all info
+http://localhost:3000/user/1
+
+//update borrow status
+curl -X PUT "http://localhost:3000/return-book?readerId=2&bookId=1"
